@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VTècnics | Seguridad Elrow Town 2026</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <img src="./assets/logo-vtecnics.png" alt="VTècnics" />
+      </a>
+      <nav class="nav" aria-label="Secciones principales">
+        <a href="#emergencia">Emergencia</a>
+        <a href="#riesgos">Riesgos</a>
+        <a href="#tareas">Tareas</a>
+        <a href="#checklist">Checklist</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">PSC Elrow Town 2026 · Iren Green Park, Reggio Emilia</p>
+          <h1>Guía de seguridad para trabajadores de VTècnics</h1>
+          <p>
+            Consulta rápida de la información esencial del Plan de Seguridad y Coordinación:
+            emergencias, trabajos en altura, rigging, audio, video, electricidad, maquinaria,
+            señalización, EPI y coordinación entre empresas.
+          </p>
+          <div class="hero-actions">
+            <a class="button danger" href="#emergencia">Ver emergencia</a>
+            <a class="button" href="./assets/psc-elrow-town-2026.pdf" target="_blank" rel="noreferrer">Abrir PSC original</a>
+          </div>
+        </div>
+        <aside class="event-card" aria-label="Datos del evento">
+          <span>Evento</span>
+          <strong>ELROW TOWN 2026</strong>
+          <dl>
+            <div><dt>Show</dt><dd>6 junio 2026</dd></div>
+            <div><dt>Montaje</dt><dd>25 mayo - 5 junio 2026</dd></div>
+            <div><dt>Desmontaje</dt><dd>noche 6 - 10 junio 2026</dd></div>
+            <div><dt>Obra</dt><dd>Palco, ground support y service audio/video/luz</dd></div>
+          </dl>
+        </aside>
+      </section>
+
+      <section class="tools">
+        <label class="search">
+          <span>Buscar en la guía</span>
+          <input id="searchInput" type="search" placeholder="Ej. altura, carretilla, ruido, extintor, casco..." />
+        </label>
+        <div class="quick-links" id="quickLinks"></div>
+      </section>
+
+      <section id="emergencia" class="section emergency">
+        <div class="section-head">
+          <p class="eyebrow">Prioridad maxima</p>
+          <h2>Emergencia y primeros auxilios</h2>
+          <p>Acciones operativas resumidas desde los apartados 9.1 a 9.6 del PSC.</p>
+        </div>
+        <div id="emergencyGrid" class="grid"></div>
+      </section>
+
+      <section id="resumen" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Contexto de obra</p>
+          <h2>Información esencial</h2>
+        </div>
+        <div id="summaryGrid" class="grid"></div>
+      </section>
+
+      <section id="riesgos" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Riesgos presentes</p>
+          <h2>Mapa de riesgos por actividad</h2>
+          <p>Tarjetas resumidas para identificar exposiciones, medidas y EPI antes de empezar una tarea.</p>
+        </div>
+        <div id="riskGrid" class="risk-grid"></div>
+      </section>
+
+      <section id="tareas" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Fases del montaje</p>
+          <h2>Macro-fases y controles clave</h2>
+        </div>
+        <div id="phaseList" class="phase-list"></div>
+      </section>
+
+      <section id="equipos" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Herramientas y maquinaria</p>
+          <h2>Procedimientos de uso seguro</h2>
+        </div>
+        <div id="equipmentGrid" class="grid"></div>
+      </section>
+
+      <section id="dpi" class="section">
+        <div class="section-head">
+        <p class="eyebrow">Protección individual y colectiva</p>
+          <h2>EPI obligatorios</h2>
+        </div>
+        <div id="ppeGrid" class="ppe-grid"></div>
+      </section>
+
+      <section id="agenda" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Planificacion</p>
+          <h2>Cronograma operativo</h2>
+        </div>
+        <div id="schedule" class="timeline"></div>
+      </section>
+
+      <section id="checklist" class="section checklist-section">
+        <div class="section-head">
+          <p class="eyebrow">Antes de trabajar</p>
+          <h2>Checklist diaria VTècnics</h2>
+          <p>Las marcas se guardan en este dispositivo para uso diario del trabajador.</p>
+        </div>
+        <div id="checklistItems" class="checklist"></div>
+        <div class="checklist-actions">
+          <button id="resetChecklist" class="button">Reiniciar checklist</button>
+          <button id="printPage" class="button">Imprimir guía</button>
+        </div>
+      </section>
+
+      <section id="contactos" class="section">
+        <div class="section-head">
+          <p class="eyebrow">Numeros utiles</p>
+          <h2>Contactos de obra y emergencia</h2>
+        </div>
+        <div id="contactsGrid" class="grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Guía interna elaborada para VTècnics a partir del PSC "ELROW TOWN 2026", emisión 25/05/2026.
+        No sustituye el PSC, el POS de cada empresa ni las instrucciones del CSE en obra.
+      </p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
