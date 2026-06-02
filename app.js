@@ -1,8 +1,10 @@
 const data = {
   quickLinks: [
     ["#emergencia", "Emergencia"],
+    ["#documentos", "PDF oficiales"],
+    ["#interferencias", "DUVRI"],
     ["#riesgos", "Trabajos en altura"],
-    ["#equipos", "Muletti"],
+    ["#equipos", "Carretillas"],
     ["#dpi", "EPI"],
     ["#agenda", "Cronograma"],
     ["#contactos", "Contactos"],
@@ -38,6 +40,62 @@ const data = {
         "No colgar hasta que el operador lo indique.",
       ],
     },
+    {
+      title: "Orden de evacuación",
+      phone: "112",
+      body: [
+        "La evacuación general se activa por el Coordinador General, coordinado con la Sala COS.",
+        "Mantener la calma, no correr, no gritar y dirigir a las personas hacia la salida practicable más cercana.",
+        "No circular en sentido contrario por las vías de evacuación.",
+        "Ayudar primero a personas con movilidad reducida o en dificultad.",
+      ],
+    },
+    {
+      title: "Viento y clima adverso",
+      phone: "112",
+      body: [
+        "El límite global de viento para las estructuras indicado en el plan ERT es 50 km/h.",
+        "Si se superan 35 km/h tres veces en 10 minutos: avisar a dirección de producción.",
+        "Si se superan 45 km/h tres veces en 10 minutos: apoyar los elementos suspendidos móviles en un plano horizontal estable.",
+        "Si se superan 50 km/h tres veces en 10 minutos: abandonar el área alrededor de la estructura.",
+      ],
+    },
+    {
+      title: "Objeto sospechoso u orden público",
+      phone: "112",
+      body: [
+        "No tocar, mover ni acercarse al objeto sospechoso.",
+        "Informar sin atraer la atención del público al coordinador de área o responsable de seguridad.",
+        "No iniciar acciones por cuenta propia; esperar instrucciones de seguridad o fuerzas del orden.",
+        "Si se evacúa, usar rutas alejadas del objeto o zona de riesgo.",
+      ],
+    },
+  ],
+  documents: [
+    {
+      title: "PSC - Plan de Seguridad y Coordinación",
+      href: "./assets/psc-elrow-town-2026.pdf",
+      body: [
+        "Documento base de seguridad para montaje, desmontaje, trabajos en altura, maquinaria, EPI, señalización y emergencias de obra.",
+        "Emisión indicada en el documento: 25/05/2026.",
+      ],
+    },
+    {
+      title: "DUVRI - Riesgos interferenciales",
+      href: "./assets/duvri-elrow-town-italy-iren-park-060626.pdf",
+      body: [
+        "Documento de coordinación de riesgos por interferencias entre empresas, vehículos, peatones, cargas, electricidad, incendio y ruido.",
+        "Incluye datos de gestión del evento y teléfonos de emergencia.",
+      ],
+    },
+    {
+      title: "ERT - Plan de Gestión de Emergencias",
+      href: "./assets/ert-piano-emergenza-iren-park-060626.pdf",
+      body: [
+        "Plan específico de emergencia para el evento: seguridad, evacuación, incendio, clima adverso, viento, sismo, orden público y emergencias médicas.",
+        "Incluye coordinadores, Sala COS, seguridad, antincendio y servicio sanitario.",
+      ],
+    },
   ],
   summary: [
     {
@@ -66,6 +124,15 @@ const data = {
       body: [
         "Personal de vigilanza/security presente en accesos.",
         "Personal paramédico con ambulancia durante todas las fases de montaje y desmontaje.",
+        "El Plan ERT prevé 300 operadores totales de safety/security/asistencia durante el evento, con 40 personas en equipo antincendio y 15 para artistas/backstage.",
+      ],
+    },
+    {
+      title: "Gestión de seguridad del evento",
+      body: [
+        "Responsable de seguridad y Coordinador General: Luca Saviolo.",
+        "Vicecoordinador General: Giacomo Bonfiglio.",
+        "Los coordinadores de área y la Sala COS canalizan las comunicaciones de emergencia durante el evento.",
       ],
     },
     {
@@ -157,6 +224,61 @@ const data = {
       ppe: ["Según intervención autorizada", "Evacuación si no se controla rápido"],
     },
   ],
+  interferences: [
+    {
+      title: "Circulación y maniobras",
+      body: [
+        "Conducir a velocidad contenida y respetar los recorridos dedicados.",
+        "El DUVRI indica 10 km/h como límite interior de instalación; en maniobras próximas a trabajo, circular a paso de persona.",
+        "En marcha atrás, espacios reducidos o baja visibilidad, solicitar ayuda de personal en tierra.",
+        "No aparcar ni permanecer en áreas de carga/descarga delimitadas.",
+      ],
+    },
+    {
+      title: "Desplazamientos a pie",
+      body: [
+        "Caminar por recorridos peatonales señalizados o por el margen de las vías transitables.",
+        "No permanecer detrás de vehículos en maniobra o parada.",
+        "No tocar recipientes, materiales, equipos u objetos presentes sin autorización.",
+        "Mantener pasos, vías de fuga y zonas de trabajo limpias y ordenadas.",
+      ],
+    },
+    {
+      title: "Caída de materiales desde altura",
+      body: [
+        "Antes de iniciar trabajos en altura, delimitar adecuadamente el área inferior.",
+        "No iniciar la tarea si hay personas bajo la zona de intervención.",
+        "No pasar ni permanecer bajo el radio de acción de equipos de elevación.",
+        "Usar medios de izado e imbragado adecuados para evitar caída accidental de cargas.",
+      ],
+    },
+    {
+      title: "Incendio y sustancias inflamables",
+      body: [
+        "Prohibido fumar o encender fuego en toda el área de intervención.",
+        "No usar llamas libres sin autorización previa.",
+        "Solicitar retirada de sustancias inflamables de la zona de trabajo.",
+        "En derrame accidental, circunscribir y recoger el líquido con material absorbente.",
+      ],
+    },
+    {
+      title: "Electricidad 380/230 V",
+      body: [
+        "No acceder a cabinas, zonas confinadas, motores o cuadros sin autorización.",
+        "No abrir equipos conectados ni improvisar reparaciones.",
+        "No maniobrar cuadros eléctricos sin autorización ni trabajar en partes en tensión.",
+        "En incendio eléctrico, cortar alimentación y usar polvo o CO2; no usar agua.",
+      ],
+    },
+    {
+      title: "Ruido y protección auditiva",
+      body: [
+        "En trabajos o zonas con ruido igual o superior a 80 dB(A), usar protectores auditivos.",
+        "La protección puede ser arco, orejeras o tapones según evaluación de la empresa.",
+        "Reducir permanencia junto a fuentes sonoras intensas durante pruebas y show.",
+      ],
+    },
+  ],
   phases: [
     ["01", "Ground Support Space Roof y palco", "Montaje de estructura de palco y plano de trabajo. Requiere proyecto, montaje conforme y estabilidad verificada."],
     ["02", "Rigging estructural", "Marcaje en suelo y colocación de polipastos eléctricos. Intervienen riggers de gira, riggers locales, mozos de carga y carretilleros."],
@@ -212,9 +334,13 @@ const data = {
     ["7-10 junio", "Desmontaje de audio, luces, video, escenografía, palco, estructuras y recuperación de cables."],
   ],
   contacts: [
-    { title: "CSE / Direccion estructuras", body: ["Franco Zamparo", "Mob. 347 9102308", "franco.zamparo@gmail.com"] },
+    { title: "CSE / Dirección estructuras", body: ["Franco Zamparo", "Mob. 347 9102308", "franco.zamparo@gmail.com"] },
     { title: "Proyecto estructuras", body: ["Ing. Pietro Lotti", "Mob. 348 923 8652 - 351 590 1969", "pietro.lotti.ingegneria@gmail.com"] },
     { title: "VTècnics", body: ["Josep Maria Serra", "josepmaria@vtecnics.com", "Rol PSC: service español"] },
+    { title: "Responsable seguridad evento", body: ["Luca Saviolo", "392 2495502", "Coordinador General de seguridad según Plan ERT"] },
+    { title: "Vicecoordinador seguridad", body: ["Giacomo Bonfiglio", "377 3127239", "Segundo en línea de mando según Plan ERT"] },
+    { title: "Collegamento COS", body: ["Alberto Bernazzi", "340 6298623", "Enlace con Sala COS según Plan ERT"] },
+    { title: "Organización EM TOUR 2 SL", body: ["Alex Castillo: +34 659273956", "Irina Núñez: +34 657066100"] },
     { title: "Comune Reggio Emilia", body: ["Piazza Prampolini, 1", "0522 456111", "comune.informa@comune.re.it"] },
     { title: "Polizia municipale", body: ["Emergencias/urgencias: 0522 4000", "polizia.municipale.reggioemilia@pec.municipio.re.it"] },
     { title: "ENEL", body: ["Pronto intervento elettricita", "800 900 800"] },
@@ -232,6 +358,9 @@ const data = {
     "Las vias de paso estan limpias, sin flight cases abandonados en rampas.",
     "Sé quién es el responsable de emergencia y dónde está el punto de reunión.",
     "Conozco los teléfonos 112, 115 y 118 y la dirección de la obra.",
+    "Sé que para evacuación, viento, objeto sospechoso u orden público debo seguir instrucciones de Coordinador de Área/Sala COS.",
+    "No atravieso áreas de carga/descarga ni zonas de maniobra de vehículos.",
+    "No toco cuadros eléctricos, materiales o equipos que no correspondan a mi tarea autorizada.",
     "Si hay pruebas/show, llevo protección auditiva si corresponde.",
     "No realizo maniobras fuera de mi competencia o formación.",
   ],
@@ -260,6 +389,7 @@ function render() {
     .join("");
 
   $("#summaryGrid").innerHTML = data.summary.map((item) => card(item)).join("");
+  $("#documentsGrid").innerHTML = data.documents.map((item) => documentCard(item)).join("");
 
   $("#riskGrid").innerHTML = data.risks
     .map(
@@ -280,6 +410,8 @@ function render() {
       `,
     )
     .join("");
+
+  $("#interferenceGrid").innerHTML = data.interferences.map((item) => card(item)).join("");
 
   $("#phaseList").innerHTML = data.phases
     .map(
@@ -333,6 +465,16 @@ function card(item) {
     <article class="card searchable">
       <h3>${item.title}</h3>
       ${list(item.body)}
+    </article>
+  `;
+}
+
+function documentCard(item) {
+  return `
+    <article class="card document-card searchable">
+      <h3>${item.title}</h3>
+      ${list(item.body)}
+      <a class="button" href="${item.href}" target="_blank" rel="noreferrer">Abrir PDF</a>
     </article>
   `;
 }

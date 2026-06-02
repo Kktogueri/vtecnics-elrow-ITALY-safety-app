@@ -5,15 +5,17 @@ Aplicación estática para consulta interna de seguridad de trabajadores de VTè
 ## Contenido
 
 - Emergencias y llamadas rápidas.
-- Información esencial del PSC.
+- Información esencial del PSC, DUVRI y Plan de Gestión de Emergencias.
+- Acceso a los PDF originales.
 - Riesgos por actividad.
+- Riesgos de interferencia entre empresas.
 - Macro-fases de montaje y desmontaje.
 - Procedimientos de maquinaria y herramientas.
 - EPI obligatorios.
 - Cronograma operativo.
 - Checklist diaria con guardado local.
 - Contactos utiles.
-- PDF original incluido en `assets/psc-elrow-town-2026.pdf`.
+- PDF originales incluidos en `assets/`.
 
 ## Publicacion en GitHub Pages
 
@@ -25,4 +27,4 @@ Aplicación estática para consulta interna de seguridad de trabajadores de VTè
 
 ## Nota
 
-Esta guía resume y traduce información operativa del PSC "ELROW TOWN 2026", emisión 25/05/2026. No sustituye el PSC, el POS de cada empresa ni las instrucciones del CSE en obra.
+Esta guía resume y traduce información operativa del PSC, el DUVRI y el Plan de Gestión de Emergencias de ELROW TOWN 2026. No sustituye estos documentos, el POS de cada empresa ni las instrucciones del CSE, Coordinador General, Sala COS o responsables de seguridad en obra/evento.
